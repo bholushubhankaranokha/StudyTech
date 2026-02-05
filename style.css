@@ -1,5 +1,5 @@
 @import url('https://.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Playwrite+NZ+Basic:wght@100..400&family=Splash&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Lugrasimo&family=Playwrite+NZ+Basic:wght@100..400&family=Splash&family=UnifrakturMaguntia&display=swap');
 
 :root {
     --primary-color: #4F46E5;     
@@ -134,4 +134,140 @@ body{
 .menu-icon{
     height: 1.5rem;
     width: 1.5rem;
+}
+
+.main-section{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-left{
+    text-align: center;
+    animation: slidFromLeft 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slidFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.section-label{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--link-color);
+}
+
+.section-heading{
+    font-size: 2.6rem;
+    font-family: "Lugrasimo", cursive;
+    font-weight: 800;
+    font-style: normal;
+    padding: 1rem;
+}
+
+.section-para{
+    font-size: 2rem;
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--gray);
+}
+
+.button-group{
+    display: flex;
+    padding: 1rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.start-button,.tour-button{
+    border: none;
+    border-radius: 0.5rem;
+    background: linear-gradient(
+        135deg,
+        #0f1623,
+        #00E5FF,
+        #0589ae
+    );
+    background-size: 200% 200%;
+    background-position: left center;
+    color: var(--background-color);
+    transition: background-position 0.5s ease, transform 0.3s ease;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.18rem;
+    font-weight: 600;
+}
+
+.tour-button{
+    background: linear-gradient(
+        135deg,
+        #7b4949,
+        #ff0303,
+        #821010
+    );
+}
+
+.tour-button:hover{
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(11, 31, 33, 0.35);
+}
+
+.start-button:hover{
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(11, 31, 33, 0.35);
+}
+
+.image-container{
+    border-radius: none;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 8px 10px rgba(11, 31, 33, 0.35);
+    height: 60vh;
+}
+
+.section-img{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width:1075px) {
+    .main-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-heading{
+        padding-left: 0;
+        font-size: 3rem;
+    }
+    .section-label{
+        text-align: center;
+    }
+    .image-container{
+        height: 70vh;
+    }
+    .section-para{
+        font-size: 1.99rem;
+    }
 }
