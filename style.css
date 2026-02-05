@@ -271,3 +271,177 @@ body{
         font-size: 1.99rem;
     }
 }
+
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.3rem;
+    animation: slidFromLeft 1s ease forwards;
+}
+
+.coomapny-heading{
+    font-family: "Splash", cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #821010;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+    text-underline-offset: 0.6rem;
+}
+
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 1rem;
+    background-color: rgb(68, 50, 50);
+    border: none;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3.2rem;
+    padding: 2rem 1.8rem;
+}
+
+.company-logo{
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    gap: 1rem;
+    color: var(--gray);
+
+}
+
+.svg-img{
+    height: 2rem;
+}
+
+.logo-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Splash", cursive;
+}
+
+@media screen and (min-width:1075px) {
+    .company-grid{
+    grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.feature-container{
+    background-color: var(--light-gray);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.feature-content{
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.head-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.heading-feature{
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #e17777;
+    text-decoration: underline;
+    text-decoration-thickness: 0.15rem;
+    text-underline-offset: 0.6rem;
+}
+
+.para-feature{
+    font-family: "Lugrasimo", cursive;
+    font-weight: 800;
+    font-size: 1rem;
+    color: rgb(150, 185, 238);
+}
+
+.card-grid{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2.5rem;
+}
+
+@media screen and (max-width:850px) {
+    .card-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
+}
+.feature-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9f49ae;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.cardicon{
+    background-color: var(--background-color);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardimg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cardinfo{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-card:nth-child(1){
+    background-color: #9c7c59;
+}
+
+.feature-card:nth-child(2){
+    background-color: #599a9c;
+}
+
+.feature-card:nth-child(3){
+    background-color: #356a3a;
+}
+
+.feature-card:nth-child(4){
+    background-color: #e6af56;
+}
+
+.feature-card:nth-child(5){
+    background-color: #6869cd;
+}
+
+.feature-card:nth-child(6){
+    background-color: #fa5f5f;
+}
+
+.cardheading{
+    font-size: 2.2rem;
+    font-weight: 1000;
+    font-family: "Lavishly Yours", cursive;
+}
+
+.cardpara{
+    font-family: cursive;
+    font-weight: 800;
+}
+
